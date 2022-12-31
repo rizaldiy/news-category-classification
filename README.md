@@ -4,4 +4,4 @@ Categories Classification based on article text using Machine Learning Model, `.
 - Random Forest : 80.95%
 - Logistic Regression : 78.35%
 - Naive Bayes : 70.60%
-- Decision Tree : 67. 66%
+- Decision Tree : 67.66%
