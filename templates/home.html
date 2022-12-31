@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Machine Learning App with Flask
+		</div>
+		<h2>CNN News Category Classifier</h2>
+		
+	</div>
+	</header>
+
+	<div class="results">
+
+
+		
+		{% if prediction == 0%}
+		<h2>Kategori: Ekonomi</h2>
+		{% elif prediction == 1%}
+		<h2>Kategori: Gaya Hidup</h2>
+		{% elif prediction == 2%}
+		<h2>Kategori: Hiburan</h2>
+		{% elif prediction == 3%}
+		<h2>Kategori: Internasional</h2>
+		{% elif prediction == 4%}
+		<h2>Kategori: Nasional</h2>
+		{% elif prediction == 5%}
+		<h2>Kategori: Olahraga</h2>
+		{% elif prediction == 6%}
+		<h2>Kategori:Teknologi</h2>
+		{% endif %}
+	
+		</div>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Masukkan teks berita anda disini</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="20" cols="150"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+		
+	</form>
+		
+	</div>
+		
+
+</body>
+</html>
