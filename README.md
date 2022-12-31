@@ -1,5 +1,5 @@
 # Indonesian News Categories Classification
-Categories Classification based on article text using Machine Learning Model, `.ipynb` Accuracy score results:
+Categories classification based on article text using Machine Learning model, `.ipynb` Accuracy score results:
 - SVM : 83.17%
 - Random Forest : 80.95%
 - Logistic Regression : 78.35%
